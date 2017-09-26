@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Welcome to Jade Acupuncture!</title>
+	<title>Contact Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Acupuncture Clinic" />
 	<meta name="keywords" content="acupuncture clinic, eastern medicine, therapy" />
@@ -25,7 +25,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -33,9 +33,6 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -56,25 +53,79 @@
 			</div>
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
-					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="ourtreatments.html">Our Treatments</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="contact.html" class="active">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-
-	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
-		<div class="item"><a href="images/featured-1.jpg" class="image-popup"><img src="images/featured-1.jpg" alt="image"></a></div>
-		<div class="item"><a href="images/featured-2.jpg" class="image-popup"><img src="images/featured-2.jpg" alt="image"></a></div>
+	<div class="fh5co-parallax" style="background-image: url(images/hero-1.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+					<div class="fh5co-intro fh5co-table-cell">
+						<h1 class="text-center">Contact Us</h1>
+						<p>Please contact us to reserve your appointment</p>
+						<p>
+							Monday Wednesday Thursday  10am – 6pm
+							Tuesdays & Friday 10am – 4pm
+							Saturdays 10am – 2pm
+							Closed Sundays and By Appointment only.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end: fh5co-parallax -->
+	<div id="fh5co-contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 animate-box">
+					<h3>Our Address</h3>
+					<ul class="contact-info">
+						<li><i class="icon-location-pin"></i>12711 Newport Avenue, Tustin, CA 92780</li>
+						<li><i class="icon-phone2"></i><div id="phoneNum"></div>1234 5678910</li>
+						<li><i class="icon-mail"></i><a href="#">jade@blahblah.net</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8 animate-box">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div id="map" class="fh5co-map animate-box"></div>
+	<!-- END map -->
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>12711 Newport Avenue, Tustin, CA 92780 </p>
+						<p>12711 Newport Avenue, Tustin, CA 92780</p>
 						<p>Copyright 2016. All Rights Reserved.</p>
 						<p class="fh5co-social-icons">
 							<a href="#"><i class="icon-twitter-with-circle"></i></a>
@@ -95,8 +146,11 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<!-- Owl carousel -->
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/google_map.js"></script>
 	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
 
